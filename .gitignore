@@ -1,2 +1,4 @@
 .DS_Store
 .env
+*.owl
+catalog-v001.xml

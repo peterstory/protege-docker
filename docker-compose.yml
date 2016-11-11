@@ -1,0 +1,10 @@
+version: '2'
+services:
+  webprotege:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - "./docker_resources:/root/protege/docker_resources"
+    ports:
+      - "127.0.0.1:2222:22"
