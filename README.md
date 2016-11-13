@@ -19,7 +19,7 @@ you're on Linux, just run the `run_protege.command` script from the
 command-line. If you're on Windows, you'll have to start the Docker container,
 then SSH with X11 forwarding.
 
-When prompted, enter the root password that you choose earlier.
+When prompted, enter the root password that you chose earlier.
 
 To load an ontology, first copy your ontology into the `docker_resources`
 folder, which is mapped into the container. Then, within Protégé, navigate to
