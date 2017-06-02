@@ -9,6 +9,12 @@ Your host system needs Docker and an X11 windowing system.
 
 ## Setup
 
+Configure your host to allow X11 forwarding to localhost by adding the following to `~/.ssh/config`:
+
+	Host localhost
+	  ForwardX11Trusted yes
+	  ForwardX11 yes
+
 Copy the `dot_env_example` file to `.env`. Then, fill in a root password of your
 choice.
 
