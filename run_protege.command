@@ -3,6 +3,12 @@
 # Start the Docker container
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 docker-compose up -d
+if [ $? -ne 0 ] ; then
+  echo "Failed to start the Docker container"
+  exit 1
+else
+  echo "Successfully started the Docker container"
+fi
 
 # SSH with X11 forwarding
 login_failed() {
